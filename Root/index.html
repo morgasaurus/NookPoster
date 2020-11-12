@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="Nook Share">
+    <meta property="og:image" content="nook_leaf.png">
+    <meta property="og:description" content="Create a social media post from a list of Animal Crossing: New Horizons items.">
+    <meta property="og:url" content="https://nookshare.us">
+    <link rel="stylesheet" href="style.css?v=1">
+    <title>Nook Share</title>
+</head>
+<body class="main" onload="onLoad()">
+    <div class="content">
+        <div class="header-container">
+            <div class="header-icon">
+                <img src="nook_leaf.png" />
+            </div>
+            <div class="header-text">
+                <h1>Nook Share<h1>
+                <p>Create an organized social media post using a list of items that you wish to trade.</p>
+            </div>
+        </div>
+        <div class="input-container margin-bottom-normal">
+            <p class="margin-bottom-normal">Enter trading instructions here and they will show up before the list:</p>
+            <textarea id="instructionsBefore" name="instructionsBefore" class="text-area-input margin-bottom-normal" onkeyup="textareaOnKeyup(this)"></textarea>
+
+            <p class="margin-bottom-normal">Create your list:</p>
+            <table id="itemTable" class="item-table">
+                <tr class="item-table-heading">
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Currency</th>
+                    <th>Per</th>
+                    <th></th>
+                </tr>
+                <tr id="lastRow" class="item-table-add">
+                    <td>
+                        <button onclick="addItem()">+</button>
+                    </td>
+                </tr>
+            </table>
+            
+            <p class="margin-bottom-normal">Enter follow up instructions here and they will show up after the list:</p>
+            <textarea id="instructionsAfter" name="instructionsAfter" class="text-area-input margin-bottom-normal" onkeyup="textareaOnKeyup(this)"></textarea>
+        </div>
+        <div class="separator"></div>
+        <div class="output-container">
+            <p class="margin-bottom-normal">The text of your post is available here:<p>
+            <p id="postOutput" class="post-output margin-bottom-normal"></p>
+            <button onclick="copy()">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js?v=1"></script>
+</body>
+</html>

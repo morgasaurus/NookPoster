@@ -1,0 +1,61 @@
+.margin-bottom-normal {
+    margin-bottom: 1rem;
+}
+
+.text-area-input {
+    width: 100%;
+    resize: none;
+}
+
+.separator {
+    margin: 1rem 0 1rem 0;
+    border: 0.125rem solid black;
+}
+
+.main {
+    font-family: Verdana, Verdana, sans-serif;
+    background-image: url("leaves_background.jpg");
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.main .content .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.main .content .header-container .header-icon {
+    margin-right: 1.5rem;   
+}
+
+.main .content .header-container .header-icon img {
+    max-height: 200px;        
+}
+
+.main .content .header-container .header-text h1 {
+    font-size: 2.5rem;
+}
+
+.main .content .header-container .header-text p {
+    font-size: 1.5rem;
+}
+
+.main .content .input-container .item-table {
+    width: 100%;
+    border: 0.125rem solid black;
+    background-color: white;
+    padding: 0.125rem;
+}
+
+.main .content .input-container .item-table .item-table-item td input {
+    width: 100%;
+}
+
+.main .content .output-container .post-output {
+    border: 0.125rem solid black;
+    background-color: white;
+    padding: 0.125rem;
+    min-height: 1rem;
+}
